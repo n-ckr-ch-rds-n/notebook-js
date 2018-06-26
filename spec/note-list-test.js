@@ -1,8 +1,7 @@
 (function(exports) {
   function testStoresAnArrayOfNoteModels() {
-    var note = new Note("How are you?");
     var notelist = new Notelist();
-    notelist.store(note);
+    notelist.store("How are you?");
     assert.isTrue(notelist.list[0].read === "How are you?")
   };
 
