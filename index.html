@@ -8,7 +8,7 @@
     <script src="lib/note-list-model.js"></script>
     <script src="lib/single-note-view.js"></script>
     <script src="spec/assert.js"></script>
-    <script src="spec/note-list-view-test.js"></script>
+    <!-- <script src="spec/note-list-view-test.js"></script> -->
     <script src="spec/note-model-test.js"></script>
     <script src="spec/note-list-test.js"></script>
     <script src="spec/single-note-view-test.js"></script>
@@ -18,7 +18,12 @@
       hello
     </div>
     <script src="lib/note-controller.js"></script>
-    <script src="spec/note-controller-test.js"></script>
-
+    <!-- <script src="spec/note-controller-test.js"></script> -->
+    <script>
+    var notelist = new Notelist;
+    var notecontroller = new NoteController(notelist);
+    var app = document.getElementById('app');
+    notecontroller.update(app);
+    </script>
   </body>
 </html>
